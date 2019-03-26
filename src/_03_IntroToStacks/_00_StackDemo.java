@@ -18,6 +18,7 @@ public class _00_StackDemo {
 		//Since Mango was the last one pushed, it will be the first one popped.
 		System.out.println("Popping off the top of the stack:");
 		System.out.println(flavors.pop());
+		System.out.println(flavors.pop());
 		
 		//Clearing the stack
 		int sz = flavors.size();
