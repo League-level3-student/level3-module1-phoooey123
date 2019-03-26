@@ -13,8 +13,8 @@ public class _01_IntroToStack {
 		
 		//2. Use a loop to push 100 random doubles between 0 and 100 to the Stack.
 		for (int i = 0; i < 100; i++) {
-			Random r = new Random(100);
-			double d = r.nextDouble();
+			Random r = new Random();
+			double d = r.nextDouble() * 100;
 			dub.push(d);
 		}
 		//3. Ask the user to enter in two numbers between 0 and 100, inclusive. 
@@ -26,8 +26,11 @@ public class _01_IntroToStack {
 		//   between the two numbers entered by the user, print it to the screen.
 		for (int i = 0; i < 100; i++) {
 			double down = dub.pop();
-			if() {
-				
+			if(down < answ && down > answ2) {
+				System.out.println(down);
+			}
+			if(down > answ && down < answ2) {
+				System.out.println(down);
 			}
 		}
 		
